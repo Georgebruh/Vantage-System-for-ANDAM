@@ -2,6 +2,42 @@
 
 Hardware revisions, newest first. Each release is tagged `rev-<letter>`.
 
+## Rev B — 2026-11-05
+
+Power board PCB. The sensor board is unchanged and stays at Rev A.
+
+### Power board
+
+- PCB laid out: 110 × 30 mm with the outline and M3 holes of the sensor board, one copper layer for toner
+  transfer, the same track and gap rules, ground fill with thermal reliefs.
+- Two wire links on the component side: W1 carries +3V3 over the I2C tracks, W2 carries ground to the 5 V boost.
+  A 1.0 mm ground track runs under D2, which uses a footprint with 2.4 mm between its pads.
+- 3.3 V now from an RT9080-33 LDO (U5) through a MAX40200 ideal diode (U3), instead of the TPS63020 module and the
+  LM66100.
+- Sensor 5 V now from an MT3608 boost converter on the board (U6, L1, D3, set to 5.0 V by R4 and R5), still
+  switched by the TPS2051B (U4).
+- The INA226 modules (U1, U2) stand upright in 8 way sockets; the CN3791 module (M1) plugs into a 4 way socket.
+- The battery is a 1S pack with its own BMS on a JST XH side entry header; the BMS module and the BAT_ISO jumper
+  are removed. R7 (0 Ω) is the battery link and can be removed for a current measurement.
+- The I2C expansion header J3 is removed. J2 is now a 3.5 mm screw terminal and J1 a JST XH side entry header.
+- Module envelope drawing: 134 × 30 × 43.6 mm with the mated plugs, round tube of at least 53 mm inner diameter.
+
+### Library
+
+- New footprints: INA226 socket (upright), CN3791 socket, JST XH 2 way side entry, SOT-23-5 and SOT-23-6 on the
+  copper side, SMA with a wide gap, radial 6.3 mm capacitor, radial 8 mm inductor, 2 mm test pad.
+- New symbols: MAX40200, MT3608, RT9080-33. Removed: LM66100, BMS and DC-DC module symbols.
+
+### Tools
+
+- `tools/make_outputs.py` makes the copper artwork, assembly drawing and figures for both boards, and the module
+  envelope of the power board.
+
+### Documents
+
+- VNT-002 Vantage — Power board — Fabrication, assembly and test, second edition (was Description and test).
+- VNT-001: reference to VNT-002 updated to its new title; no technical change.
+
 ## Rev A — 2026-10-25
 
 First release in this repository. It consolidates the earlier, unreleased design iterations.

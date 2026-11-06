@@ -1,0 +1,4 @@
+(version 1)
+(rule "SOT-23 pad pitch"
+  (condition "A.intersectsCourtyard('U3') || A.intersectsCourtyard('U4') || A.intersectsCourtyard('U5') || A.intersectsCourtyard('U6')")
+  (constraint clearance (min 0.35mm)))

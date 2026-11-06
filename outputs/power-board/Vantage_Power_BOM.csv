@@ -1,27 +1,25 @@
-Item,Qty,References,Value,Package / part
-1,1,BT1,18650 1S,JST B2B-XH-A to the 18650 pack lead
-2,2,C1 C7,220uF 16V,"radial electrolytic 6.3 mm, 2.5 mm pitch"
-3,4,C2 C4 C5 C8,100nF,1206 (3216)
-4,1,C3,220uF 10V,"radial electrolytic 6.3 mm, 2.5 mm pitch"
-5,2,C6 C9,10uF,1206 (3216)
-6,1,D1,SMAJ9.0CA,"SMA (DO-214AC), bidirectional TVS"
-7,1,D2,SS34,"SMA (DO-214AC), 3 A Schottky"
-8,1,F1,PTC 1.5A,"1812 PTC, 1.5 A hold"
-9,1,J1,SENSOR,"JST B6B-XH-A (XH 6-pin, vertical)"
-10,1,J2,SOLAR 6V,"2-way screw terminal, 5.08 mm"
-11,1,J3,I2C,1x4 male header 2.54 mm
-12,1,JP1,BAT_ISO,1x2 male header 2.54 mm + jumper cap
-13,1,M1,CN3791 MPPT 6V,"CN3791 MPPT charger module, 6 V panel"
-14,1,M2,BMS 1S,1S Li-ion protection (BMS) module
-15,1,M3,TPS63020 3V3,"TPS63020 buck-boost module, 3.3 V out"
-16,1,M4,BOOST 5V,5 V boost module
-17,1,R1,10k,1206 (3216)
-18,2,R2 R3,4.7k,1206 (3216)
-19,1,TP1,VBAT,test pad
-20,1,TP2,3V3,test pad
-21,1,TP3,5V,test pad
-22,1,TP4,GND,test pad
-23,1,U1,INA226 0x40,"INA226 module, address 0x40 (solar)"
-24,1,U2,INA226 0x44,"INA226 module, address 0x44 (battery)"
-25,1,U3,LM66100,"LM66100 ideal diode, SC-70-6"
-26,1,U4,TPS2051B,"TPS2051B power switch, SOT-23-5"
+Item,Qty,References,Value,Package,Mounted on
+1,1,BT1,1S PACK (BMS),"JST S2B-XH-A, XH 2-way side entry",component side
+2,4,C1 C4 C7 C8,22uF,"1206 (3216), X5R/X7R, >=10 V",copper side (SMD)
+3,2,C2 C6,100nF,"1206 (3216), X7R, >=10 V",copper side (SMD)
+4,2,C3 C5,10uF,"1206 (3216), X5R/X7R, >=10 V",copper side (SMD)
+5,1,C9,220uF 16V,"radial electrolytic 6.3 mm, 2.5 mm pitch, <=11 mm tall",component side
+6,1,D1,SMAJ9.0CA,"SMA (DO-214AC), bidirectional TVS",copper side (SMD)
+7,2,D2 D3,SS34,"SMA (DO-214AC), 3 A 40 V Schottky",copper side (SMD)
+8,1,F1,PTC 1.5A,"1812 (4532), 1.5 A hold",copper side (SMD)
+9,1,J1,SENSOR,"JST S6B-XH-A, XH 6-way side entry",component side
+10,1,J2,SOLAR,"2-way screw terminal, 3.5 mm pitch",component side
+11,1,L1,22uH 1A,"radial inductor 8 mm, 5 mm pitch, saturation >=1 A",component side
+12,1,M1,CN3791 MPPT 6V,"1x4 female header 2.54 mm, for the CN3791 module",component side
+13,1,R1,10k,1206 (3216),copper side (SMD)
+14,2,R2 R3,4.7k,1206 (3216),copper side (SMD)
+15,1,R4,22k,"1206 (3216), 1 %",copper side (SMD)
+16,1,R5,3.0k,"1206 (3216), 1 %",copper side (SMD)
+17,1,R6,100k,1206 (3216),copper side (SMD)
+18,1,R7,0R,"1206 (3216), zero ohm",copper side (SMD)
+19,4,TP1 TP2 TP3 TP4,VBAT 3V3 5V GND,"test pad, copper only",copper side
+20,2,U1 U2,INA226 0x40 / 0x44,"1x8 female header 2.54 mm, for the INA226 modules",component side
+21,1,U3,MAX40200,"SOT-23-5, MAX40200AUK",copper side (SMD)
+22,1,U4,TPS2051B,"SOT-23-5, TPS2051BDBV",copper side (SMD)
+23,1,U5,RT9080-33,"SOT-23-5, RT9080-33GJ5",copper side (SMD)
+24,1,U6,MT3608,SOT-23-6,copper side (SMD)

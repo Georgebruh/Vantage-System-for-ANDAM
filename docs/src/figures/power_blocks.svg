@@ -12,10 +12,9 @@
     <rect x="302" y="40" width="96" height="44"/>
     <!-- row B: battery -->
     <rect x="6" y="160" width="82" height="44"/>
-    <rect x="106" y="160" width="84" height="44"/>
-    <rect x="208" y="160" width="40" height="44"/>
-    <rect x="264" y="160" width="60" height="44"/>
-    <rect x="340" y="160" width="76" height="44"/>
+    <rect x="106" y="160" width="80" height="44"/>
+    <rect x="204" y="160" width="80" height="44"/>
+    <rect x="302" y="160" width="96" height="44"/>
     <!-- right: supplies -->
     <rect x="458" y="40" width="98" height="44"/>
     <rect x="574" y="40" width="90" height="44"/>
@@ -27,10 +26,9 @@
     <path d="M284 62 H302" marker-end="url(#a)"/>
     <path d="M398 62 H434"/>
     <path d="M88 182 H106" marker-end="url(#a)"/>
-    <path d="M190 182 H208" marker-end="url(#a)"/>
-    <path d="M248 182 H264" marker-end="url(#a)"/>
-    <path d="M324 182 H340" marker-end="url(#a)"/>
-    <path d="M416 182 H434"/>
+    <path d="M186 182 H204" marker-end="url(#a)"/>
+    <path d="M284 182 H302" marker-end="url(#a)"/>
+    <path d="M398 182 H434"/>
     <path d="M434 62 V182" stroke-width="2.6"/>
     <path d="M434 62 H458" marker-end="url(#a)"/>
     <path d="M434 182 H458" marker-end="url(#a)"/>
@@ -45,16 +43,15 @@
     <text x="146" y="58">D1 TVS</text><text x="146" y="74">D2 SS34</text>
     <text x="244" y="58">U1 INA226</text><text x="244" y="74">0x40</text>
     <text x="350" y="58">M1 CN3791</text><text x="350" y="74">MPPT charger</text>
-    <text x="47" y="178">BT1 18650</text><text x="47" y="194">1S cell</text>
-    <text x="148" y="178">M2 BMS</text><text x="148" y="194">1S protection</text>
-    <text x="228" y="178">F1</text><text x="228" y="194">1.5 A</text>
-    <text x="294" y="178">JP1</text><text x="294" y="194">BAT_ISO</text>
-    <text x="378" y="178">U2 INA226</text><text x="378" y="194">0x44</text>
-    <text x="507" y="58">M3 TPS63020</text><text x="507" y="74">3.3 V</text>
-    <text x="619" y="58">U3 LM66100</text><text x="619" y="74">ideal diode</text>
+    <text x="47" y="178">BT1 1S pack</text><text x="47" y="194">with BMS</text>
+    <text x="146" y="178">F1 PTC</text><text x="146" y="194">1.5 A</text>
+    <text x="244" y="178">U2 INA226</text><text x="244" y="194">0x44</text>
+    <text x="350" y="178">R7 0 Ω</text><text x="350" y="194">battery link</text>
+    <text x="507" y="58">U5 RT9080</text><text x="507" y="74">3.3 V LDO</text>
+    <text x="619" y="58">U3 MAX40200</text><text x="619" y="74">ideal diode</text>
     <text x="507" y="178">U4 TPS2051B</text><text x="507" y="194">switch</text>
-    <text x="619" y="178">M4 boost</text><text x="619" y="194">5 V</text>
-    <text x="507" y="266">SENS_EN (J1-3), 10 kΩ pull-down</text>
+    <text x="619" y="178">U6 MT3608</text><text x="619" y="194">boost 5 V</text>
+    <text x="507" y="266">SENS_EN (J1-3), 10 kΩ pull down</text>
   </g>
   <g>
     <text x="440" y="126" font-weight="bold">VBAT</text>

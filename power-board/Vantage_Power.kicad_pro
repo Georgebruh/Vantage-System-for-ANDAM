@@ -252,6 +252,10 @@
       },
       {
         "netclass": "Power",
+        "pattern": "/BAT_MON"
+      },
+      {
+        "netclass": "Power",
         "pattern": "/3V3_REG"
       },
       {
@@ -261,6 +265,10 @@
       {
         "netclass": "Power",
         "pattern": "/VSW"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/SW"
       },
       {
         "netclass": "Power",
@@ -280,15 +288,7 @@
       },
       {
         "netclass": "Power",
-        "pattern": "/BATT_N"
-      },
-      {
-        "netclass": "Power",
         "pattern": "/BAT_FUSED"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/BAT_ISO"
       }
     ]
   },
